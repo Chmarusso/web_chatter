@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
-
+import { DatePicker } from 'antd';
+import 'antd/dist/antd.css'; 
 export default class HelloWorld extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired, // this is passed from the Rails view
@@ -29,6 +30,7 @@ export default class HelloWorld extends React.Component {
         </h3>
         <hr />
         <form >
+          <DatePicker />
           <label htmlFor="name">
             Say hello to:
           </label>

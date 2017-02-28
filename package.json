@@ -10,5 +10,11 @@
     "postinstall": "cd client && yarn install",
     "rails-server": "echo 'visit http://localhost:3000/hello_world' && foreman start -f Procfile.dev",
     "test": "rspec"
+  },
+  "dependencies": {
+    "antd": "^2.7.4",
+    "css-loader": "^0.26.2",
+    "imports-loader": "^0.7.1",
+    "style-loader": "^0.13.2"
   }
 }
