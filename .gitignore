@@ -20,3 +20,9 @@
 # Ignore Byebug command history file.
 .byebug_history
 config/database.yml
+# React on Rails
+npm-debug.log*
+node_modules
+
+# Generated js bundles
+/app/assets/webpack/*
