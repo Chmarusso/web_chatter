@@ -13,7 +13,7 @@ const config = {
     'es5-shim/es5-shim',
     'es5-shim/es5-sham',
     'babel-polyfill',
-    './app/bundles/HelloWorld/startup/registration',
+    './app/bundles/WebChatter/startup/registration',
   ],
 
   output: {
@@ -24,6 +24,7 @@ const config = {
   resolve: {
     extensions: ['', '.js', '.jsx'],
     alias: {
+      libs: path.join(process.cwd(), 'app', 'libs'),
       react: path.resolve('./node_modules/react'),
       'react-dom': path.resolve('./node_modules/react-dom'),
     },
@@ -52,7 +53,7 @@ const config = {
           'style-loader',
           'css-loader'
         ]
-      }      
+      }
     ],
   },
 };
