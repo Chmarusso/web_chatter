@@ -1,9 +1,7 @@
 import React, { PropTypes } from 'react'
 import { Row, Col } from 'antd';
-import { Link } from 'react-router'
-import LoginForm from '../containers/LoginFormContainer';
 
-export default class Home extends React.Component {
+export default class User extends React.Component {
   constructor(props, _railsContext) {
     super(props);
   }
@@ -12,8 +10,7 @@ export default class Home extends React.Component {
       <div>
         <Row>
           <Col span={12} offset={6}>
-            <LoginForm />
-            <p><Link to="/user">Restricted area</Link></p>
+            This section is for logged users.
           </Col>
         </Row>
       </div>

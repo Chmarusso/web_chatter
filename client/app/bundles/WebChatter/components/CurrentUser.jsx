@@ -1,10 +1,8 @@
 import React, { PropTypes } from 'react'
-import styles from './CurrentUser.css'
 
 export default class CurrentUser extends React.Component {
   constructor(props, _railsContext) {
     super(props);
-    console.log(styles)
   }
 
   renderMessage() {
