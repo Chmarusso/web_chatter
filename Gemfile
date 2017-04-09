@@ -21,6 +21,12 @@ gem 'active_model_serializers', '~> 0.10.0'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'foreman'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl'
+end
+
+group :test do
+  gem 'capybara'
 end
 
 group :development do
