@@ -17,7 +17,7 @@ export default function currentUserReducer($$state = $$initialState, action = nu
     case actionTypes.LOGIN: {
       return $$state.merge({
         email: user.email,
-        fullName: user.fullName,
+        fullName: user.full_name,
         isAuthenticated: true,
         token: user.token
       });
