@@ -15,7 +15,7 @@ class EnsureUserLoggedInContainer extends React.Component {
   }
 
   render() {
-    if (this.props.isLoggedIn) {
+    if (this.props.isAuthenticated) {
       return this.props.children
     } else {
       return null

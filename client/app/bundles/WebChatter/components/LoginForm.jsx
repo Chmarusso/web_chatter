@@ -6,10 +6,10 @@ export default class LoginForm extends React.Component {
 
   constructor(props, _railsContext) {   
     super(props);
-   this.state = {
-      email: '',
-      password: ''
-    };    
+    this.state = {
+        email: '',
+        password: ''
+      };    
     this.handleInputChange = this.handleInputChange.bind(this);
   }
 
