@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem "react_on_rails", "~> 6"
 gem 'bcrypt'
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'redis'
 
 group :development, :test do
   gem 'byebug', platform: :mri
