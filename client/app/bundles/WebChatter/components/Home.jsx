@@ -14,6 +14,7 @@ export default class Home extends React.Component {
           <Col span={12} offset={6}>
             <LoginForm />
             <p><Link to="/user">Restricted area</Link></p>
+            <p><Link to="/chats">Chats</Link></p>
           </Col>
         </Row>
       </div>
