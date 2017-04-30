@@ -18,6 +18,8 @@ gem "react_on_rails", "~> 6"
 gem 'bcrypt'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'redis'
+gem 'resque'
+gem 'resque-web', require: 'resque_web'
 
 group :development, :test do
   gem 'byebug', platform: :mri

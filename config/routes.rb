@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount ResqueWeb::Engine => "/resque_web"
   mount ActionCable.server => '/cable'
   root to: 'home#index'
   get 'hello_world', to: 'hello_world#index'
