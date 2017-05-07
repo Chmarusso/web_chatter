@@ -1,15 +1,17 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { browserHistory } from 'react-router'
+import { browserHistory } from 'react-router';
+import * as actions from '../actions/alertActionCreators';
 
 class EnsureUserLoggedInContainer extends React.Component {
   constructor(props, _railsContext) {
     super(props);
   }
-
+  
   componentWillMount() {
     const { isAuthenticated } = this.props;
     if (!isAuthenticated) {
+      this.props.renderAlert('error', 'User not found.');
       browserHistory.replace("/");
     }
   }
@@ -27,4 +29,12 @@ const mapStateToProps = (state) => ({
   isAuthenticated: state.$$currentUserStore.get('isAuthenticated')
 });
 
-export default connect(mapStateToProps, {})(EnsureUserLoggedInContainer);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    renderAlert: (type, message) => {
+      dispatch(actions.renderAlert(type, message));
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(EnsureUserLoggedInContainer);
