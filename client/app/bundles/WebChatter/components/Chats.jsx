@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react'
 import { Row, Col, Menu } from 'antd';
-import { Chat } from './Chat';
 import ActionCable from 'actioncable';
 
 export default class Chats extends React.Component {
